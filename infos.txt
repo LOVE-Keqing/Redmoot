@@ -11,4 +11,5 @@ Plugins :
 - https://fancyapps.com/docs/ui/fancybox/ => Pour afficher les images du slider zoomées
 
 token :
-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
+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
+https://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@github.com/LOVE-Keqing/Redmoot
