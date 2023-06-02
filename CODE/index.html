@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Accueil</title>
     <link rel="stylesheet" href="styleAccueil.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 </head>
 <body>
     <header>
@@ -38,6 +39,39 @@
             <p class="num">05 59 20 90 50</p>
           </div>
         </div>
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+          const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+
+            pagination: {
+              el: '.swiper-pagination',
+            },
+
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        </script>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../ELEMENTS/photo1.jpg" class="photos" alt="Photo 1"></div>
+            <div class="swiper-slide"><img src="../ELEMENTS/photo2.jpg" class="photos" alt="Photo 2"></div>
+            <div class="swiper-slide"><img src="../ELEMENTS/photo3.jpg" class="photos" alt="Photo 3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"><img src="../ELEMENTS/chevron.svg"  class="chevron" alt="chevron"></div>
+          <div class="swiper-button-next"><img src="../ELEMENTS/chevron.svg"  class="chevron" alt="chevron"></div>
+        </div>-->
+        <swiper-container class="mySwiper" hash-navigation-watch-state="true" pagination="true" pagination-clickable="true" navigation="true" loop="true">
+          <swiper-slide><img src="../ELEMENTS/photo1.jpg" class="photos" alt="Photo 1"></swiper-slide>
+          <swiper-slide><img src="../ELEMENTS/photo2.jpg" class="photos" alt="Photo 2"></swiper-slide>
+          <swiper-slide><img src="../ELEMENTS/photo3.jpg" class="photos" alt="Photo 3"></swiper-slide>
+        </swiper-container>
+      
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
       </div>
             
       

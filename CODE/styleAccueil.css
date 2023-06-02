@@ -96,7 +96,7 @@ header {
   .grille {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px 500px 200px;
+    grid-template-rows: 420px 500px 200px;
     justify-content: center; 
     justify-items: center;
     text-align: left;
@@ -105,7 +105,7 @@ header {
   .grille-contact {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 140px 140px 140px;
     justify-content: center; 
     justify-items: center;
     text-align: left;
@@ -164,4 +164,25 @@ header {
     width: 100%;
     margin-left: 20px;
     align-items: center;
+  }
+
+  swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
