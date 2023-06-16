@@ -93,7 +93,7 @@ header {
   .grille {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 420px 600px 200px;
+    grid-template-rows: 420px 600px 400px;
     justify-content: center; 
     justify-items: center;
     text-align: left;
@@ -252,4 +252,22 @@ header {
   color: #fff;
   justify-self: start; 
   align-self: center;
+}
+
+/* Partie formulaire */
+
+.formulaire {
+  grid-column: 2;
+  grid-row-start: span 3;
+  grid-row-end: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#map {
+  grid-column: 1;
+  grid-row: 3;
 }

@@ -5,6 +5,9 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="styleAccueil.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <script src="../Libairies/leaflet.js"></script>
+  <link rel="stylesheet" href="../Libairies/leaflet.css" />
+  <link rel="stylesheet" href="../ELEMENTS/GMapStyle.json" />
 </head>
 <body>
     <header>
@@ -66,9 +69,36 @@
             </div>
           </div>
         </div>
+
+        <div class="formulaire">
+          <button id="myButton">Survolez-moi</button></div>
+          <script src="script-tippy.js"></script>
+
+        <div id="map" style="width: 100%; height: 400px;"></div>
+  
+        <script>
+          var map = L.map('map', {
+            center: [43.48682306698497, -1.4642060683481444],
+            zoom: 15,
+            layers: [
+              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '',
+              }),
+              L.tileLayer('../ELEMENTS/GMapStyle.json')
+            ]
+          });
+        
+          var customIcon = L.icon({
+            iconUrl: '../ELEMENTS/marker.svg',
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+          });
+        
+          var marker = L.marker([43.48682306698497, -1.4642060683481444], { icon: customIcon }).addTo(map);
+        </script>
+        
+        
       </div>
-            
-      
       
       
 </body>
