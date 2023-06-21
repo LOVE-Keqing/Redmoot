@@ -8,6 +8,9 @@
     <script src="../Libairies/leaflet.js"></script>
   <link rel="stylesheet" href="../Libairies/leaflet.css" />
   <link rel="stylesheet" href="../ELEMENTS/GMapStyle.json" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
     <header>
@@ -44,10 +47,22 @@
         </div>
 
         <swiper-container class="mySwiper" hash-navigation-watch-state="true" pagination="true" pagination-clickable="true" navigation="true" loop="true">
-          <swiper-slide><img src="../ELEMENTS/photo1.jpg" class="photos" alt="Photo 1"></swiper-slide>
-          <swiper-slide><img src="../ELEMENTS/photo2.jpg" class="photos" alt="Photo 2"></swiper-slide>
-          <swiper-slide><img src="../ELEMENTS/photo3.jpg" class="photos" alt="Photo 3"></swiper-slide>
+          <swiper-slide><a href="../ELEMENTS/photo1.jpg" data-fancybox="gallery" data-caption=""><img src="../ELEMENTS/photo1.jpg" class="photos" alt="Photo 1"></swiper-slide></a>
+          <swiper-slide><a href="../ELEMENTS/photo2.jpg" data-fancybox="gallery" data-caption=""><img src="../ELEMENTS/photo2.jpg" class="photos" alt="Photo 2"></swiper-slide></a>
+          <swiper-slide><a href="../ELEMENTS/photo3.jpg" data-fancybox="gallery" data-caption=""><img src="../ELEMENTS/photo3.jpg" class="photos" alt="Photo 3"></swiper-slide></a>
           
+          <script>
+            Fancybox.bind('[data-fancybox="gallery"]', {
+              buttons: [
+                "zoom",
+                "slideShow",
+                "fullScreen",
+                "thumbs",
+                "close"
+              ],
+            });
+          </script>
+
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
 
